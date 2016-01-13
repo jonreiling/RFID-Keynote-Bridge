@@ -68,6 +68,11 @@
             NSLog(@"Connection success!");
         } else {
             NSLog(@"Connection fail");
+
+            NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:CommunicationManager.sharedInstance selector:@selector(connect) userInfo:nil repeats:NO];
+            [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+
+        
         }
         
     } else {
@@ -194,6 +199,13 @@
 {
     NSDictionary *userInfo = [[NSDictionary alloc] initWithObjectsAndKeys:arduino.deviceNames,@"ports", nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:kSerialPortClosed object:nil userInfo:userInfo];
+    
+    
+    //NSTimer timer* = NSTimer.scheduledTimerWithTimeInterval(6.0, target: sharedInstance, selector: "connect", userInfo: nil, repeats: false)
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:CommunicationManager.sharedInstance selector:@selector(connect) userInfo:nil repeats:NO];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+//    NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
+    
 }
 
 #pragma mark -
