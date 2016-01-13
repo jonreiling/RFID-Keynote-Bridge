@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81CF657E1C3DD1D600047675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF657D1C3DD1D600047675 /* AppDelegate.swift */; };
+		81CF65801C3DD1D600047675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81CF657F1C3DD1D600047675 /* Assets.xcassets */; };
+		81CF65831C3DD1D600047675 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81CF65811C3DD1D600047675 /* MainMenu.xib */; };
+		81CF65931C3DD1F300047675 /* PreferencesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF658E1C3DD1F300047675 /* PreferencesManager.m */; };
+		81CF65941C3DD1F300047675 /* CommunicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65901C3DD1F300047675 /* CommunicationManager.m */; };
+		81CF65951C3DD1F300047675 /* KeynoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65921C3DD1F300047675 /* KeynoteManager.swift */; };
+		81CF65981C3DD20900047675 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65971C3DD20900047675 /* Slide.swift */; };
+		81CF65AD1C3E0E1D00047675 /* AMSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65A31C3E0E1D00047675 /* AMSerialPort.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		81CF65AE1C3E0E1D00047675 /* AMSerialPortAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65A51C3E0E1D00047675 /* AMSerialPortAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		81CF65AF1C3E0E1D00047675 /* AMSerialPortList_Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65A71C3E0E1D00047675 /* AMSerialPortList_Deprecated.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		81CF65B01C3E0E1D00047675 /* AMSerialPortList.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65A91C3E0E1D00047675 /* AMSerialPortList.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		81CF65B11C3E0E1D00047675 /* AMStandardEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65AB1C3E0E1D00047675 /* AMStandardEnumerator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		81CF65BA1C3E0E2100047675 /* Matatino.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65B31C3E0E2100047675 /* Matatino.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		81CF65BB1C3E0E2100047675 /* Matatino-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81CF65B41C3E0E2100047675 /* Matatino-Info.plist */; };
+		81CF65BC1C3E0E2100047675 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81CF65B61C3E0E2100047675 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		81CF657A1C3DD1D600047675 /* RFIDKeynoteBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFIDKeynoteBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81CF657D1C3DD1D600047675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81CF657F1C3DD1D600047675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81CF65821C3DD1D600047675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		81CF65841C3DD1D600047675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81CF658B1C3DD1F200047675 /* RFIDKeynoteBridge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RFIDKeynoteBridge-Bridging-Header.h"; sourceTree = "<group>"; };
+		81CF658C1C3DD1F300047675 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		81CF658D1C3DD1F300047675 /* PreferencesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesManager.h; sourceTree = "<group>"; };
+		81CF658E1C3DD1F300047675 /* PreferencesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesManager.m; sourceTree = "<group>"; };
+		81CF658F1C3DD1F300047675 /* CommunicationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicationManager.h; sourceTree = "<group>"; };
+		81CF65901C3DD1F300047675 /* CommunicationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicationManager.m; sourceTree = "<group>"; };
+		81CF65921C3DD1F300047675 /* KeynoteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeynoteManager.swift; sourceTree = "<group>"; };
+		81CF65971C3DD20900047675 /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		81CF65A01C3E0E1D00047675 /* AMSDKCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSDKCompatibility.h; sourceTree = "<group>"; };
+		81CF65A11C3E0E1D00047675 /* AMSerialErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialErrors.h; sourceTree = "<group>"; };
+		81CF65A21C3E0E1D00047675 /* AMSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPort.h; sourceTree = "<group>"; };
+		81CF65A31C3E0E1D00047675 /* AMSerialPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPort.m; sourceTree = "<group>"; };
+		81CF65A41C3E0E1D00047675 /* AMSerialPortAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortAdditions.h; sourceTree = "<group>"; };
+		81CF65A51C3E0E1D00047675 /* AMSerialPortAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortAdditions.m; sourceTree = "<group>"; };
+		81CF65A61C3E0E1D00047675 /* AMSerialPortList_Deprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortList_Deprecated.h; sourceTree = "<group>"; };
+		81CF65A71C3E0E1D00047675 /* AMSerialPortList_Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortList_Deprecated.m; sourceTree = "<group>"; };
+		81CF65A81C3E0E1D00047675 /* AMSerialPortList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortList.h; sourceTree = "<group>"; };
+		81CF65A91C3E0E1D00047675 /* AMSerialPortList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortList.m; sourceTree = "<group>"; };
+		81CF65AA1C3E0E1D00047675 /* AMStandardEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStandardEnumerator.h; sourceTree = "<group>"; };
+		81CF65AB1C3E0E1D00047675 /* AMStandardEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMStandardEnumerator.m; sourceTree = "<group>"; };
+		81CF65B21C3E0E2100047675 /* Matatino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matatino.h; sourceTree = "<group>"; };
+		81CF65B31C3E0E2100047675 /* Matatino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Matatino.m; sourceTree = "<group>"; };
+		81CF65B41C3E0E2100047675 /* Matatino-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Matatino-Info.plist"; sourceTree = "<group>"; };
+		81CF65B51C3E0E2100047675 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		81CF65B71C3E0E2100047675 /* Matatino-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Matatino-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81CF65771C3DD1D600047675 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81CF65711C3DD1D600047675 = {
+			isa = PBXGroup;
+			children = (
+				81CF65B91C3E0E2100047675 /* Matatino */,
+				81CF65AC1C3E0E1D00047675 /* AMSerialPort */,
+				81CF659D1C3E0DC400047675 /* Frameworks */,
+				81CF657C1C3DD1D600047675 /* RFIDKeynoteBridge */,
+				81CF657B1C3DD1D600047675 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81CF657B1C3DD1D600047675 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81CF657A1C3DD1D600047675 /* RFIDKeynoteBridge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81CF657C1C3DD1D600047675 /* RFIDKeynoteBridge */ = {
+			isa = PBXGroup;
+			children = (
+				81CF65961C3DD20300047675 /* model */,
+				81CF658A1C3DD1E700047675 /* business */,
+				81CF657D1C3DD1D600047675 /* AppDelegate.swift */,
+				81CF657F1C3DD1D600047675 /* Assets.xcassets */,
+				81CF65811C3DD1D600047675 /* MainMenu.xib */,
+				81CF65841C3DD1D600047675 /* Info.plist */,
+			);
+			path = RFIDKeynoteBridge;
+			sourceTree = "<group>";
+		};
+		81CF658A1C3DD1E700047675 /* business */ = {
+			isa = PBXGroup;
+			children = (
+				81CF658C1C3DD1F300047675 /* Constants.h */,
+				81CF658D1C3DD1F300047675 /* PreferencesManager.h */,
+				81CF658E1C3DD1F300047675 /* PreferencesManager.m */,
+				81CF658F1C3DD1F300047675 /* CommunicationManager.h */,
+				81CF65901C3DD1F300047675 /* CommunicationManager.m */,
+				81CF65921C3DD1F300047675 /* KeynoteManager.swift */,
+				81CF658B1C3DD1F200047675 /* RFIDKeynoteBridge-Bridging-Header.h */,
+			);
+			name = business;
+			sourceTree = "<group>";
+		};
+		81CF65961C3DD20300047675 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				81CF65971C3DD20900047675 /* Slide.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		81CF659D1C3E0DC400047675 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			path = RFIDKeynoteBridge/Frameworks;
+			sourceTree = "<group>";
+		};
+		81CF65AC1C3E0E1D00047675 /* AMSerialPort */ = {
+			isa = PBXGroup;
+			children = (
+				81CF65A01C3E0E1D00047675 /* AMSDKCompatibility.h */,
+				81CF65A11C3E0E1D00047675 /* AMSerialErrors.h */,
+				81CF65A21C3E0E1D00047675 /* AMSerialPort.h */,
+				81CF65A31C3E0E1D00047675 /* AMSerialPort.m */,
+				81CF65A41C3E0E1D00047675 /* AMSerialPortAdditions.h */,
+				81CF65A51C3E0E1D00047675 /* AMSerialPortAdditions.m */,
+				81CF65A61C3E0E1D00047675 /* AMSerialPortList_Deprecated.h */,
+				81CF65A71C3E0E1D00047675 /* AMSerialPortList_Deprecated.m */,
+				81CF65A81C3E0E1D00047675 /* AMSerialPortList.h */,
+				81CF65A91C3E0E1D00047675 /* AMSerialPortList.m */,
+				81CF65AA1C3E0E1D00047675 /* AMStandardEnumerator.h */,
+				81CF65AB1C3E0E1D00047675 /* AMStandardEnumerator.m */,
+			);
+			name = AMSerialPort;
+			path = "../../../Downloads/Matatino-master/Matatino/AMSerialPort";
+			sourceTree = "<group>";
+		};
+		81CF65B81C3E0E2100047675 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81CF65B41C3E0E2100047675 /* Matatino-Info.plist */,
+				81CF65B61C3E0E2100047675 /* InfoPlist.strings */,
+				81CF65B71C3E0E2100047675 /* Matatino-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		81CF65B91C3E0E2100047675 /* Matatino */ = {
+			isa = PBXGroup;
+			children = (
+				81CF65B21C3E0E2100047675 /* Matatino.h */,
+				81CF65B31C3E0E2100047675 /* Matatino.m */,
+				81CF65B81C3E0E2100047675 /* Supporting Files */,
+			);
+			name = Matatino;
+			path = "../../../Downloads/Matatino-master/Matatino";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81CF65791C3DD1D600047675 /* RFIDKeynoteBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81CF65871C3DD1D600047675 /* Build configuration list for PBXNativeTarget "RFIDKeynoteBridge" */;
+			buildPhases = (
+				81CF65761C3DD1D600047675 /* Sources */,
+				81CF65771C3DD1D600047675 /* Frameworks */,
+				81CF65781C3DD1D600047675 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RFIDKeynoteBridge;
+			productName = RFIDKeynoteBridge;
+			productReference = 81CF657A1C3DD1D600047675 /* RFIDKeynoteBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81CF65721C3DD1D600047675 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Reiling;
+				TargetAttributes = {
+					81CF65791C3DD1D600047675 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 81CF65751C3DD1D600047675 /* Build configuration list for PBXProject "RFIDKeynoteBridge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81CF65711C3DD1D600047675;
+			productRefGroup = 81CF657B1C3DD1D600047675 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81CF65791C3DD1D600047675 /* RFIDKeynoteBridge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81CF65781C3DD1D600047675 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81CF65BB1C3E0E2100047675 /* Matatino-Info.plist in Resources */,
+				81CF65BC1C3E0E2100047675 /* InfoPlist.strings in Resources */,
+				81CF65801C3DD1D600047675 /* Assets.xcassets in Resources */,
+				81CF65831C3DD1D600047675 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81CF65761C3DD1D600047675 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81CF65AD1C3E0E1D00047675 /* AMSerialPort.m in Sources */,
+				81CF65941C3DD1F300047675 /* CommunicationManager.m in Sources */,
+				81CF65951C3DD1F300047675 /* KeynoteManager.swift in Sources */,
+				81CF65AE1C3E0E1D00047675 /* AMSerialPortAdditions.m in Sources */,
+				81CF65931C3DD1F300047675 /* PreferencesManager.m in Sources */,
+				81CF657E1C3DD1D600047675 /* AppDelegate.swift in Sources */,
+				81CF65BA1C3E0E2100047675 /* Matatino.m in Sources */,
+				81CF65981C3DD20900047675 /* Slide.swift in Sources */,
+				81CF65B01C3E0E1D00047675 /* AMSerialPortList.m in Sources */,
+				81CF65B11C3E0E1D00047675 /* AMStandardEnumerator.m in Sources */,
+				81CF65AF1C3E0E1D00047675 /* AMSerialPortList_Deprecated.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		81CF65811C3DD1D600047675 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81CF65821C3DD1D600047675 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		81CF65B61C3E0E2100047675 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81CF65B51C3E0E2100047675 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81CF65851C3DD1D600047675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81CF65861C3DD1D600047675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		81CF65881C3DD1D600047675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/RFIDKeynoteBridge/Frameworks",
+				);
+				INFOPLIST_FILE = RFIDKeynoteBridge/Info.plist;
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = reiling.RFIDKeynoteBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RFIDKeynoteBridge/RFIDKeynoteBridge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81CF65891C3DD1D600047675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/RFIDKeynoteBridge/Frameworks",
+				);
+				INFOPLIST_FILE = RFIDKeynoteBridge/Info.plist;
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = reiling.RFIDKeynoteBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RFIDKeynoteBridge/RFIDKeynoteBridge-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81CF65751C3DD1D600047675 /* Build configuration list for PBXProject "RFIDKeynoteBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81CF65851C3DD1D600047675 /* Debug */,
+				81CF65861C3DD1D600047675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81CF65871C3DD1D600047675 /* Build configuration list for PBXNativeTarget "RFIDKeynoteBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81CF65881C3DD1D600047675 /* Debug */,
+				81CF65891C3DD1D600047675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81CF65721C3DD1D600047675 /* Project object */;
+}
