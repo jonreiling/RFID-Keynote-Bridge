@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		814F875F1C46F0F400D6A32B /* AMSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F87541C46F0F400D6A32B /* AMSerialPort.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		814F87601C46F0F400D6A32B /* AMSerialPortAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F87561C46F0F400D6A32B /* AMSerialPortAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		814F87611C46F0F400D6A32B /* AMSerialPortList.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F87581C46F0F400D6A32B /* AMSerialPortList.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		814F87621C46F0F400D6A32B /* AMSerialPortList_Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F875A1C46F0F400D6A32B /* AMSerialPortList_Deprecated.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		814F87631C46F0F400D6A32B /* AMStandardEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F875C1C46F0F400D6A32B /* AMStandardEnumerator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		814F87641C46F0F400D6A32B /* Matatino.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F875E1C46F0F400D6A32B /* Matatino.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		81CF657E1C3DD1D600047675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF657D1C3DD1D600047675 /* AppDelegate.swift */; };
 		81CF65801C3DD1D600047675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81CF657F1C3DD1D600047675 /* Assets.xcassets */; };
 		81CF65831C3DD1D600047675 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81CF65811C3DD1D600047675 /* MainMenu.xib */; };
@@ -14,17 +20,23 @@
 		81CF65941C3DD1F300047675 /* CommunicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65901C3DD1F300047675 /* CommunicationManager.m */; };
 		81CF65951C3DD1F300047675 /* KeynoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65921C3DD1F300047675 /* KeynoteManager.swift */; };
 		81CF65981C3DD20900047675 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65971C3DD20900047675 /* Slide.swift */; };
-		81CF65AD1C3E0E1D00047675 /* AMSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65A31C3E0E1D00047675 /* AMSerialPort.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		81CF65AE1C3E0E1D00047675 /* AMSerialPortAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65A51C3E0E1D00047675 /* AMSerialPortAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		81CF65AF1C3E0E1D00047675 /* AMSerialPortList_Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65A71C3E0E1D00047675 /* AMSerialPortList_Deprecated.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		81CF65B01C3E0E1D00047675 /* AMSerialPortList.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65A91C3E0E1D00047675 /* AMSerialPortList.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		81CF65B11C3E0E1D00047675 /* AMStandardEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65AB1C3E0E1D00047675 /* AMStandardEnumerator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		81CF65BA1C3E0E2100047675 /* Matatino.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CF65B31C3E0E2100047675 /* Matatino.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		81CF65BB1C3E0E2100047675 /* Matatino-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81CF65B41C3E0E2100047675 /* Matatino-Info.plist */; };
-		81CF65BC1C3E0E2100047675 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81CF65B61C3E0E2100047675 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		814F87511C46F0F400D6A32B /* AMSDKCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSDKCompatibility.h; sourceTree = "<group>"; };
+		814F87521C46F0F400D6A32B /* AMSerialErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialErrors.h; sourceTree = "<group>"; };
+		814F87531C46F0F400D6A32B /* AMSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPort.h; sourceTree = "<group>"; };
+		814F87541C46F0F400D6A32B /* AMSerialPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPort.m; sourceTree = "<group>"; };
+		814F87551C46F0F400D6A32B /* AMSerialPortAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortAdditions.h; sourceTree = "<group>"; };
+		814F87561C46F0F400D6A32B /* AMSerialPortAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortAdditions.m; sourceTree = "<group>"; };
+		814F87571C46F0F400D6A32B /* AMSerialPortList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortList.h; sourceTree = "<group>"; };
+		814F87581C46F0F400D6A32B /* AMSerialPortList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortList.m; sourceTree = "<group>"; };
+		814F87591C46F0F400D6A32B /* AMSerialPortList_Deprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortList_Deprecated.h; sourceTree = "<group>"; };
+		814F875A1C46F0F400D6A32B /* AMSerialPortList_Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortList_Deprecated.m; sourceTree = "<group>"; };
+		814F875B1C46F0F400D6A32B /* AMStandardEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStandardEnumerator.h; sourceTree = "<group>"; };
+		814F875C1C46F0F400D6A32B /* AMStandardEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMStandardEnumerator.m; sourceTree = "<group>"; };
+		814F875D1C46F0F400D6A32B /* Matatino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matatino.h; sourceTree = "<group>"; };
+		814F875E1C46F0F400D6A32B /* Matatino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Matatino.m; sourceTree = "<group>"; };
 		81CF657A1C3DD1D600047675 /* RFIDKeynoteBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFIDKeynoteBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81CF657D1C3DD1D600047675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81CF657F1C3DD1D600047675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,23 +50,6 @@
 		81CF65901C3DD1F300047675 /* CommunicationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicationManager.m; sourceTree = "<group>"; };
 		81CF65921C3DD1F300047675 /* KeynoteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeynoteManager.swift; sourceTree = "<group>"; };
 		81CF65971C3DD20900047675 /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
-		81CF65A01C3E0E1D00047675 /* AMSDKCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSDKCompatibility.h; sourceTree = "<group>"; };
-		81CF65A11C3E0E1D00047675 /* AMSerialErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialErrors.h; sourceTree = "<group>"; };
-		81CF65A21C3E0E1D00047675 /* AMSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPort.h; sourceTree = "<group>"; };
-		81CF65A31C3E0E1D00047675 /* AMSerialPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPort.m; sourceTree = "<group>"; };
-		81CF65A41C3E0E1D00047675 /* AMSerialPortAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortAdditions.h; sourceTree = "<group>"; };
-		81CF65A51C3E0E1D00047675 /* AMSerialPortAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortAdditions.m; sourceTree = "<group>"; };
-		81CF65A61C3E0E1D00047675 /* AMSerialPortList_Deprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortList_Deprecated.h; sourceTree = "<group>"; };
-		81CF65A71C3E0E1D00047675 /* AMSerialPortList_Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortList_Deprecated.m; sourceTree = "<group>"; };
-		81CF65A81C3E0E1D00047675 /* AMSerialPortList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortList.h; sourceTree = "<group>"; };
-		81CF65A91C3E0E1D00047675 /* AMSerialPortList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortList.m; sourceTree = "<group>"; };
-		81CF65AA1C3E0E1D00047675 /* AMStandardEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStandardEnumerator.h; sourceTree = "<group>"; };
-		81CF65AB1C3E0E1D00047675 /* AMStandardEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMStandardEnumerator.m; sourceTree = "<group>"; };
-		81CF65B21C3E0E2100047675 /* Matatino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matatino.h; sourceTree = "<group>"; };
-		81CF65B31C3E0E2100047675 /* Matatino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Matatino.m; sourceTree = "<group>"; };
-		81CF65B41C3E0E2100047675 /* Matatino-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Matatino-Info.plist"; sourceTree = "<group>"; };
-		81CF65B51C3E0E2100047675 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		81CF65B71C3E0E2100047675 /* Matatino-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Matatino-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +63,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		814F874F1C46F0F400D6A32B /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				814F87501C46F0F400D6A32B /* AMSerialPort */,
+				814F875D1C46F0F400D6A32B /* Matatino.h */,
+				814F875E1C46F0F400D6A32B /* Matatino.m */,
+			);
+			name = libraries;
+			path = RFIDKeynoteBridge/libraries;
+			sourceTree = "<group>";
+		};
+		814F87501C46F0F400D6A32B /* AMSerialPort */ = {
+			isa = PBXGroup;
+			children = (
+				814F87511C46F0F400D6A32B /* AMSDKCompatibility.h */,
+				814F87521C46F0F400D6A32B /* AMSerialErrors.h */,
+				814F87531C46F0F400D6A32B /* AMSerialPort.h */,
+				814F87541C46F0F400D6A32B /* AMSerialPort.m */,
+				814F87551C46F0F400D6A32B /* AMSerialPortAdditions.h */,
+				814F87561C46F0F400D6A32B /* AMSerialPortAdditions.m */,
+				814F87571C46F0F400D6A32B /* AMSerialPortList.h */,
+				814F87581C46F0F400D6A32B /* AMSerialPortList.m */,
+				814F87591C46F0F400D6A32B /* AMSerialPortList_Deprecated.h */,
+				814F875A1C46F0F400D6A32B /* AMSerialPortList_Deprecated.m */,
+				814F875B1C46F0F400D6A32B /* AMStandardEnumerator.h */,
+				814F875C1C46F0F400D6A32B /* AMStandardEnumerator.m */,
+			);
+			path = AMSerialPort;
+			sourceTree = "<group>";
+		};
 		81CF65711C3DD1D600047675 = {
 			isa = PBXGroup;
 			children = (
-				81CF65B91C3E0E2100047675 /* Matatino */,
-				81CF65AC1C3E0E1D00047675 /* AMSerialPort */,
+				814F874F1C46F0F400D6A32B /* libraries */,
 				81CF659D1C3E0DC400047675 /* Frameworks */,
 				81CF657C1C3DD1D600047675 /* RFIDKeynoteBridge */,
 				81CF657B1C3DD1D600047675 /* Products */,
@@ -128,47 +152,6 @@
 			);
 			name = Frameworks;
 			path = RFIDKeynoteBridge/Frameworks;
-			sourceTree = "<group>";
-		};
-		81CF65AC1C3E0E1D00047675 /* AMSerialPort */ = {
-			isa = PBXGroup;
-			children = (
-				81CF65A01C3E0E1D00047675 /* AMSDKCompatibility.h */,
-				81CF65A11C3E0E1D00047675 /* AMSerialErrors.h */,
-				81CF65A21C3E0E1D00047675 /* AMSerialPort.h */,
-				81CF65A31C3E0E1D00047675 /* AMSerialPort.m */,
-				81CF65A41C3E0E1D00047675 /* AMSerialPortAdditions.h */,
-				81CF65A51C3E0E1D00047675 /* AMSerialPortAdditions.m */,
-				81CF65A61C3E0E1D00047675 /* AMSerialPortList_Deprecated.h */,
-				81CF65A71C3E0E1D00047675 /* AMSerialPortList_Deprecated.m */,
-				81CF65A81C3E0E1D00047675 /* AMSerialPortList.h */,
-				81CF65A91C3E0E1D00047675 /* AMSerialPortList.m */,
-				81CF65AA1C3E0E1D00047675 /* AMStandardEnumerator.h */,
-				81CF65AB1C3E0E1D00047675 /* AMStandardEnumerator.m */,
-			);
-			name = AMSerialPort;
-			path = "../../../Downloads/Matatino-master/Matatino/AMSerialPort";
-			sourceTree = "<group>";
-		};
-		81CF65B81C3E0E2100047675 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				81CF65B41C3E0E2100047675 /* Matatino-Info.plist */,
-				81CF65B61C3E0E2100047675 /* InfoPlist.strings */,
-				81CF65B71C3E0E2100047675 /* Matatino-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		81CF65B91C3E0E2100047675 /* Matatino */ = {
-			isa = PBXGroup;
-			children = (
-				81CF65B21C3E0E2100047675 /* Matatino.h */,
-				81CF65B31C3E0E2100047675 /* Matatino.m */,
-				81CF65B81C3E0E2100047675 /* Supporting Files */,
-			);
-			name = Matatino;
-			path = "../../../Downloads/Matatino-master/Matatino";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +212,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81CF65BB1C3E0E2100047675 /* Matatino-Info.plist in Resources */,
-				81CF65BC1C3E0E2100047675 /* InfoPlist.strings in Resources */,
 				81CF65801C3DD1D600047675 /* Assets.xcassets in Resources */,
 				81CF65831C3DD1D600047675 /* MainMenu.xib in Resources */,
 			);
@@ -243,17 +224,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81CF65AD1C3E0E1D00047675 /* AMSerialPort.m in Sources */,
+				814F875F1C46F0F400D6A32B /* AMSerialPort.m in Sources */,
 				81CF65941C3DD1F300047675 /* CommunicationManager.m in Sources */,
 				81CF65951C3DD1F300047675 /* KeynoteManager.swift in Sources */,
-				81CF65AE1C3E0E1D00047675 /* AMSerialPortAdditions.m in Sources */,
+				814F87601C46F0F400D6A32B /* AMSerialPortAdditions.m in Sources */,
+				814F87611C46F0F400D6A32B /* AMSerialPortList.m in Sources */,
 				81CF65931C3DD1F300047675 /* PreferencesManager.m in Sources */,
+				814F87641C46F0F400D6A32B /* Matatino.m in Sources */,
 				81CF657E1C3DD1D600047675 /* AppDelegate.swift in Sources */,
-				81CF65BA1C3E0E2100047675 /* Matatino.m in Sources */,
+				814F87621C46F0F400D6A32B /* AMSerialPortList_Deprecated.m in Sources */,
+				814F87631C46F0F400D6A32B /* AMStandardEnumerator.m in Sources */,
 				81CF65981C3DD20900047675 /* Slide.swift in Sources */,
-				81CF65B01C3E0E1D00047675 /* AMSerialPortList.m in Sources */,
-				81CF65B11C3E0E1D00047675 /* AMStandardEnumerator.m in Sources */,
-				81CF65AF1C3E0E1D00047675 /* AMSerialPortList_Deprecated.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,14 +247,6 @@
 				81CF65821C3DD1D600047675 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		81CF65B61C3E0E2100047675 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81CF65B51C3E0E2100047675 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -421,6 +394,7 @@
 				81CF65891C3DD1D600047675 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
