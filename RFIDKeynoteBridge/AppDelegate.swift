@@ -8,6 +8,14 @@
 
 import Cocoa
 
+enum SoundFXType: String {
+    case portalActivated = "portalActivated.mp3"
+    case buttonTap = "buttonTap.mp3"
+    case doubleTap = "doubleTapTap.mp3"
+    case tagPlaced = "tagPlaced.mp3"
+    case tagRemoved = "tagRemoved.mp3"
+}
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, CommunicationManagerDelegate {
     
@@ -32,7 +40,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, CommunicationManagerDelegate
         //      NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
         
         
-        
+        // Initializes the SoundManager
+        SoundManager.sharedManager().prepareToPlay()
         
     }
     
@@ -41,6 +50,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, CommunicationManagerDelegate
     }
     
     func onTagEnter(tag: String!) {
+        
+        self.playSoundFXType(.tagPlaced, fadeIn: true)
         
         print("tag = \(tag)")
         keynoteManager.gotoSectionWithName(tag)
@@ -57,26 +68,31 @@ class AppDelegate: NSObject, NSApplicationDelegate, CommunicationManagerDelegate
     }
     
     func onTagLeave() {
+        self.playSoundFXType(.tagRemoved, fadeIn: true)
         keynoteManager.gotoSectionWithName("IDLE")
         CommunicationManager.sharedInstance().sendCommand("disableButton")
     }
     
     func onButtonClick() {
+        self.playSoundFXType(.buttonTap, fadeIn: true)
         keynoteManager.gotoNext()
     }
     
     func onButtonDoubleClick() {
+        self.playSoundFXType(.doubleTap, fadeIn: true)
         keynoteManager.gotoPrevious()
     }
     
     func onPresenceDetected() {
-        
+        self.playSoundFXType(.portalActivated, fadeIn: true)
     }
     
     func onPresenceTimeout() {
         
     }
 
-
+    func playSoundFXType(soundFXType: SoundFXType, fadeIn: Bool) {
+        SoundManager.sharedManager().playSound(soundFXType.rawValue, looping: false, fadeIn: fadeIn)
+    }
 }
 

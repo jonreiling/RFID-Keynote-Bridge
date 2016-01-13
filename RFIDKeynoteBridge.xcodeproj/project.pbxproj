@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09945CE61C46F78F00EBE957 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09945CE51C46F78F00EBE957 /* SoundManager.m */; };
+		09945CEE1C46FAE000EBE957 /* buttonTap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09945CE91C46FAE000EBE957 /* buttonTap.mp3 */; };
+		09945CEF1C46FAE000EBE957 /* doubleTap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09945CEA1C46FAE000EBE957 /* doubleTap.mp3 */; };
+		09945CF01C46FAE000EBE957 /* singleTap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09945CEB1C46FAE000EBE957 /* singleTap.mp3 */; };
+		09945CF11C46FAE000EBE957 /* portalActivated.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09945CEC1C46FAE000EBE957 /* portalActivated.mp3 */; };
+		09945CF21C46FAE000EBE957 /* tagRemoved.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09945CED1C46FAE000EBE957 /* tagRemoved.mp3 */; };
 		814F875F1C46F0F400D6A32B /* AMSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F87541C46F0F400D6A32B /* AMSerialPort.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		814F87601C46F0F400D6A32B /* AMSerialPortAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F87561C46F0F400D6A32B /* AMSerialPortAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		814F87611C46F0F400D6A32B /* AMSerialPortList.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F87581C46F0F400D6A32B /* AMSerialPortList.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -23,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09945CE41C46F78F00EBE957 /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		09945CE51C46F78F00EBE957 /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+		09945CE91C46FAE000EBE957 /* buttonTap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttonTap.mp3; sourceTree = "<group>"; };
+		09945CEA1C46FAE000EBE957 /* doubleTap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = doubleTap.mp3; sourceTree = "<group>"; };
+		09945CEB1C46FAE000EBE957 /* singleTap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = singleTap.mp3; sourceTree = "<group>"; };
+		09945CEC1C46FAE000EBE957 /* portalActivated.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = portalActivated.mp3; sourceTree = "<group>"; };
+		09945CED1C46FAE000EBE957 /* tagRemoved.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tagRemoved.mp3; sourceTree = "<group>"; };
 		814F87511C46F0F400D6A32B /* AMSDKCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSDKCompatibility.h; sourceTree = "<group>"; };
 		814F87521C46F0F400D6A32B /* AMSerialErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialErrors.h; sourceTree = "<group>"; };
 		814F87531C46F0F400D6A32B /* AMSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPort.h; sourceTree = "<group>"; };
@@ -63,9 +76,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09945CE31C46F78F00EBE957 /* SoundManager */ = {
+			isa = PBXGroup;
+			children = (
+				09945CE41C46F78F00EBE957 /* SoundManager.h */,
+				09945CE51C46F78F00EBE957 /* SoundManager.m */,
+			);
+			path = SoundManager;
+			sourceTree = "<group>";
+		};
+		09945CE71C46FAD000EBE957 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				09945CE81C46FAE000EBE957 /* SoundFx */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		09945CE81C46FAE000EBE957 /* SoundFx */ = {
+			isa = PBXGroup;
+			children = (
+				09945CE91C46FAE000EBE957 /* buttonTap.mp3 */,
+				09945CEA1C46FAE000EBE957 /* doubleTap.mp3 */,
+				09945CEB1C46FAE000EBE957 /* singleTap.mp3 */,
+				09945CEC1C46FAE000EBE957 /* portalActivated.mp3 */,
+				09945CED1C46FAE000EBE957 /* tagRemoved.mp3 */,
+			);
+			path = SoundFx;
+			sourceTree = "<group>";
+		};
 		814F874F1C46F0F400D6A32B /* libraries */ = {
 			isa = PBXGroup;
 			children = (
+				09945CE31C46F78F00EBE957 /* SoundManager */,
 				814F87501C46F0F400D6A32B /* AMSerialPort */,
 				814F875D1C46F0F400D6A32B /* Matatino.h */,
 				814F875E1C46F0F400D6A32B /* Matatino.m */,
@@ -114,6 +157,7 @@
 		81CF657C1C3DD1D600047675 /* RFIDKeynoteBridge */ = {
 			isa = PBXGroup;
 			children = (
+				09945CE71C46FAD000EBE957 /* resources */,
 				81CF65961C3DD20300047675 /* model */,
 				81CF658A1C3DD1E700047675 /* business */,
 				81CF657D1C3DD1D600047675 /* AppDelegate.swift */,
@@ -212,8 +256,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09945CF11C46FAE000EBE957 /* portalActivated.mp3 in Resources */,
 				81CF65801C3DD1D600047675 /* Assets.xcassets in Resources */,
+				09945CEE1C46FAE000EBE957 /* buttonTap.mp3 in Resources */,
 				81CF65831C3DD1D600047675 /* MainMenu.xib in Resources */,
+				09945CEF1C46FAE000EBE957 /* doubleTap.mp3 in Resources */,
+				09945CF21C46FAE000EBE957 /* tagRemoved.mp3 in Resources */,
+				09945CF01C46FAE000EBE957 /* singleTap.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +282,7 @@
 				814F87641C46F0F400D6A32B /* Matatino.m in Sources */,
 				81CF657E1C3DD1D600047675 /* AppDelegate.swift in Sources */,
 				814F87621C46F0F400D6A32B /* AMSerialPortList_Deprecated.m in Sources */,
+				09945CE61C46F78F00EBE957 /* SoundManager.m in Sources */,
 				814F87631C46F0F400D6A32B /* AMStandardEnumerator.m in Sources */,
 				81CF65981C3DD20900047675 /* Slide.swift in Sources */,
 			);
