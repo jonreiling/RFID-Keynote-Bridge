@@ -64,7 +64,7 @@
         }
         
         // Connect to your device with 9600 baud
-        if([arduino connect:serialPort withBaud:B9600]) {
+        if([arduino connect:serialPort withBaud:B115200]) {
             NSLog(@"Connection success!");
         } else {
             NSLog(@"Connection fail");
@@ -104,11 +104,11 @@
 
 -(void)processEvent:(NSDictionary*)eventDictionary {
     
-    NSString *event = [eventDictionary objectForKey:@"event"];
+    NSString *event = [eventDictionary objectForKey:@"e"];
 
     //Clever solution for switching on string from
     //http://stackoverflow.com/questions/8161737/can-objective-c-switch-on-nsstring
-    NSArray *possibleEvents = @[@"tag",@"presence",@"button"];
+    NSArray *possibleEvents = @[@"t",@"p",@"b"];
     NSInteger eventIndex = [possibleEvents indexOfObject:event];
     
     switch (eventIndex) {
@@ -129,7 +129,7 @@
 
 -(void)processTagEvent:(NSDictionary*)eventDictionary{
     
-    NSString *tagValue = [eventDictionary objectForKey:@"value"];
+    NSString *tagValue = [eventDictionary objectForKey:@"v"];
     
     if ( [tagValue isEqualToString:@"NONE"]){
         [self.delegate onTagLeave];
@@ -140,9 +140,9 @@
 
 -(void)processPresenceEvent:(NSDictionary*)eventDictionary {
     
-    NSString *presenceValue = [eventDictionary objectForKey:@"value"];
+    NSString *presenceValue = [eventDictionary objectForKey:@"v"];
 
-    if ( [presenceValue isEqualToString:@"detected"]){
+    if ( [presenceValue isEqualToString:@"t"]){
         [self.delegate onPresenceDetected];
     } else {
         [self.delegate onPresenceTimeout];
@@ -151,9 +151,9 @@
 
 -(void)processButtonEvent:(NSDictionary*)eventDictionary {
     
-    NSString *buttonValue = [eventDictionary objectForKey:@"value"];
+    NSString *buttonValue = [eventDictionary objectForKey:@"v"];
     
-    if ( [buttonValue isEqualToString:@"doubleclick"]){
+    if ( [buttonValue isEqualToString:@"double"]){
         [self.delegate onButtonDoubleClick];
     } else {
         [self.delegate onButtonClick];

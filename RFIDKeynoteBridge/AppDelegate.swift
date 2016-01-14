@@ -9,11 +9,11 @@
 import Cocoa
 
 enum SoundFXType: String {
-    case portalActivated = "portalActivated.mp3"
+    case portalActivated = "portalActivated.m4a"
     case buttonTap = "buttonTap.mp3"
     case doubleTap = "doubleTapTap.mp3"
-    case tagPlaced = "tagPlaced.mp3"
-    case tagRemoved = "tagRemoved.mp3"
+    case tagPlaced = "tagPlaced.m4a"
+    case tagRemoved = "tagRemoved.m4a"
 }
 
 @NSApplicationMain
@@ -42,6 +42,11 @@ class AppDelegate: NSObject, NSApplicationDelegate, CommunicationManagerDelegate
         
         // Initializes the SoundManager
         SoundManager.sharedManager().prepareToPlay()
+        SoundManager.sharedManager().soundVolume = 0.2
+        self.preloadSoundFXType(.tagPlaced)
+        self.preloadSoundFXType(.tagRemoved)
+        self.preloadSoundFXType(.portalActivated)
+        
         
     }
     
@@ -51,7 +56,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, CommunicationManagerDelegate
     
     func onTagEnter(tag: String!) {
         
-        self.playSoundFXType(.tagPlaced, fadeIn: true)
+        self.playSoundFXType(.portalActivated)
         
         print("tag = \(tag)")
         keynoteManager.gotoSectionWithName(tag)
@@ -68,31 +73,37 @@ class AppDelegate: NSObject, NSApplicationDelegate, CommunicationManagerDelegate
     }
     
     func onTagLeave() {
-        self.playSoundFXType(.tagRemoved, fadeIn: true)
+        self.playSoundFXType(.tagRemoved)
         keynoteManager.gotoSectionWithName("IDLE")
         CommunicationManager.sharedInstance().sendCommand("disableButton")
     }
     
     func onButtonClick() {
-        self.playSoundFXType(.buttonTap, fadeIn: true)
+        self.playSoundFXType(.buttonTap)
         keynoteManager.gotoNext()
     }
     
     func onButtonDoubleClick() {
-        self.playSoundFXType(.doubleTap, fadeIn: true)
+        self.playSoundFXType(.doubleTap)
         keynoteManager.gotoPrevious()
     }
     
     func onPresenceDetected() {
-        self.playSoundFXType(.portalActivated, fadeIn: true)
+        print("onPresenceDetected");
+        self.playSoundFXType(.portalActivated)
     }
     
     func onPresenceTimeout() {
+        print("onPresenceTimeout");
         
     }
 
-    func playSoundFXType(soundFXType: SoundFXType, fadeIn: Bool) {
-        SoundManager.sharedManager().playSound(soundFXType.rawValue, looping: false, fadeIn: fadeIn)
+    func playSoundFXType(soundFXType: SoundFXType) {
+        SoundManager.sharedManager().playSound(soundFXType.rawValue, looping: false, fadeIn: false)
+    }
+    
+    func preloadSoundFXType(soundFXType: SoundFXType) {
+        SoundManager.sharedManager().prepareToPlayWithSound(soundFXType.rawValue)
     }
 }
 
