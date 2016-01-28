@@ -69,7 +69,7 @@
         } else {
             NSLog(@"Connection fail");
 
-            NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:CommunicationManager.sharedInstance selector:@selector(connect) userInfo:nil repeats:NO];
+            NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:CommunicationManager.sharedInstance selector:@selector(connect) userInfo:nil repeats:NO];
             [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 
         
@@ -150,7 +150,7 @@
 }
 
 -(void)processButtonEvent:(NSDictionary*)eventDictionary {
-    
+
     NSString *buttonValue = [eventDictionary objectForKey:@"v"];
     
     if ( [buttonValue isEqualToString:@"double"]){
@@ -174,7 +174,7 @@
     NSError *error;
     
     NSDictionary *eventJSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-    
+
     if (!error) {
         [self processEvent:eventJSON];
     }
@@ -202,7 +202,7 @@
     
     
     //NSTimer timer* = NSTimer.scheduledTimerWithTimeInterval(6.0, target: sharedInstance, selector: "connect", userInfo: nil, repeats: false)
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:CommunicationManager.sharedInstance selector:@selector(connect) userInfo:nil repeats:NO];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:CommunicationManager.sharedInstance selector:@selector(connect) userInfo:nil repeats:NO];
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 //    NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
     

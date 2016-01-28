@@ -8,6 +8,7 @@ http://www.opensource.org/licenses/BSD-3-Clause
 
 Matatino Copyright (c) 2011, RobotGrrl.com. All rights reserved.
 */
+#define AMSerialDebug
 
 #import "Matatino.h"
 #import "AMSerialPort.h"

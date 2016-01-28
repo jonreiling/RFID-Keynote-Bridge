@@ -19,7 +19,7 @@ public class KeynoteManager:NSObject {
         
         populateSlides()
         
-        let timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "monitorForIdleLoop", userInfo: nil, repeats: true)
+        let timer = NSTimer.scheduledTimerWithTimeInterval(4.0, target: self, selector: "monitorForIdleLoop", userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
 
     }
@@ -80,7 +80,7 @@ public class KeynoteManager:NSObject {
         
         let command = "tell application \"Keynote\" \n set keynoteFile to front document \n set t to slide number of current slide of keynoteFile \n end tell \n return t";
         
-        if let response = runCommand(command) {
+        if let response = runCommandWithResults(command) {
             return Int(response)! - 1
         } else {
             return -1
@@ -158,7 +158,7 @@ public class KeynoteManager:NSObject {
         
         let command = "tell application \"Keynote\" \n set keynoteFile to front document \n set t to presenter notes of slide \(String(slideNumber)) of keynoteFile \n end tell \n return t";
         
-        if let response = runCommand(command) {
+        if let response = runCommandWithResults(command) {
             return response
         } else {
             print("end of the line")
@@ -177,7 +177,18 @@ public class KeynoteManager:NSObject {
     }
     
     
-    private func runCommand(command:String) -> String? {
+    private func runCommand(command:String) {
+        
+        let startAtLoginScript: NSAppleScript = NSAppleScript(source: command)!
+        var possibleError: NSDictionary?
+        
+        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+        dispatch_async(dispatch_get_global_queue(priority, 0)) {
+            startAtLoginScript.executeAndReturnError(&possibleError)
+        };
+    }
+    
+    private func runCommandWithResults(command:String) -> String? {
         
         let startAtLoginScript: NSAppleScript = NSAppleScript(source: command)!
         var possibleError: NSDictionary?
@@ -186,6 +197,7 @@ public class KeynoteManager:NSObject {
         
         return results
     }
+    
     
     private func populateSlides() {
         

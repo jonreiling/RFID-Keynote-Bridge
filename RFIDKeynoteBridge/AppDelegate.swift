@@ -22,6 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, CommunicationManagerDelegate
     @IBOutlet weak var window: NSWindow!
     
     var keynoteManager : KeynoteManager!
+    @IBOutlet weak var statusLabel : NSTextField!
     
     
     @IBAction func begin(sender:AnyObject) {
@@ -48,6 +49,14 @@ class AppDelegate: NSObject, NSApplicationDelegate, CommunicationManagerDelegate
         self.preloadSoundFXType(.portalActivated)
         
         
+  //      down vote
+//        This one worked for me, hope that can be helpful
+        
+//        [self.window makeKeyAndOrderFront:nil];
+  //      [self.window setLevel:NSStatusWindowLevel];
+        self.window.makeKeyAndOrderFront(nil)
+        self.window.level = Int(CGWindowLevelForKey(CGWindowLevelKey.StatusWindowLevelKey))
+        
     }
     
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -59,6 +68,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, CommunicationManagerDelegate
         self.playSoundFXType(.portalActivated)
         
         print("tag = \(tag)")
+        statusLabel.stringValue = "tag = \(tag)"
         keynoteManager.gotoSectionWithName(tag)
         
         let slidesInSection = keynoteManager.slidesInSection(tag)
@@ -66,19 +76,22 @@ class AppDelegate: NSObject, NSApplicationDelegate, CommunicationManagerDelegate
         if slidesInSection == 0 {
             
         } else if keynoteManager.slidesInSection(tag) == 1 {
-            CommunicationManager.sharedInstance().sendCommand("disableButton")
+           CommunicationManager.sharedInstance().sendCommand("disableButton")
         } else {
             CommunicationManager.sharedInstance().sendCommand("enableButton")
         }
     }
     
     func onTagLeave() {
+        statusLabel.stringValue = "tag leave"
         self.playSoundFXType(.tagRemoved)
         keynoteManager.gotoSectionWithName("IDLE")
         CommunicationManager.sharedInstance().sendCommand("disableButton")
     }
     
     func onButtonClick() {
+        statusLabel.stringValue = "onButtonClick"
+        print("onButtonClick")
         self.playSoundFXType(.buttonTap)
         keynoteManager.gotoNext()
     }
@@ -89,11 +102,14 @@ class AppDelegate: NSObject, NSApplicationDelegate, CommunicationManagerDelegate
     }
     
     func onPresenceDetected() {
+        statusLabel.stringValue = "onPresenceDetected"
+        
         print("onPresenceDetected");
         self.playSoundFXType(.portalActivated)
     }
     
     func onPresenceTimeout() {
+        statusLabel.stringValue = "onPresenceTimeout"
         print("onPresenceTimeout");
         
     }
